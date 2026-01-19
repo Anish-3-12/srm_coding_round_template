@@ -66,6 +66,23 @@ def compressed_stack_length(lst):
     """
     # TODO: Implement your solution here
     pass
+    #code in java
+    int x=lst.length;
+    int i=0;
+    int cnt=0;
+    while(x>i){
+      if(lst[i]==lst[i+1]){
+        i=i+2;
+      }else{
+        cnt++;
+        i++;
+      }
+      if(i>=x) break;
+    }
+    return cnt;
+
+
+
 
 
 if __name__ == "__main__":
