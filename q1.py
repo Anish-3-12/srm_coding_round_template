@@ -54,6 +54,26 @@ def first_stable_character(s):
     # TODO: Implement your solution here
     pass
 
+    #writing code in java
+    int n= s.length();
+    int cnt=0;
+    int final=0;
+    char ans='';
+    for(int i=0;i<n-1;i++){
+        if(s.charAt(i)==s.charAt(i+1)){
+            cnt++;
+        }else{
+            cnt=0;
+        }
+
+        if(cnt>final){
+            ans=s.charAt(i);
+        }
+    }
+    return ans;
+
+
+
 
 if __name__ == "__main__":
     # Test your solution here
